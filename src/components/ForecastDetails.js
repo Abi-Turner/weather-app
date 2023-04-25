@@ -7,16 +7,16 @@ function ForecastDetails({ forecast }) {
 
   return (
     <div className="forecast-details" data-testid="forecast-details">
-      <div className="forecast-details__date">{formattedDate}</div>
-      <div className="forecast-details__temperature">
+      <div className="forecast-details-date">{formattedDate}</div>
+      <div className="forecast-details-temperature">
         Max Temperature: {temperature.max}
         &deg;C
       </div>
-      <div className="forecast-details__humidity">Humidity:{humidity}%</div>
-      <div className="forecast-details__wind-speed">
+      <div className="forecast-details-humidity">Humidity:{humidity}%</div>
+      <div className="forecast-details-wind-speed">
         Wind speed: {wind.speed}mph
       </div>
-      <div className="forecast-details__wind-direction">
+      <div className="forecast-details-wind-direction">
         Wind Direction: {wind.direction}
       </div>
     </div>

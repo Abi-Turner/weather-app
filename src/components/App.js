@@ -14,7 +14,13 @@ function App() {
   const [errorMessage, setErrorMessage] = useState("");
 
   useEffect(() => {
-    getForecast(setSelectedDate, setForecasts, setLocation, setErrorMessage);
+    getForecast(
+      "",
+      setSelectedDate,
+      setForecasts,
+      setLocation,
+      setErrorMessage
+    );
   }, []);
 
   const handleCitySearch = () => {
